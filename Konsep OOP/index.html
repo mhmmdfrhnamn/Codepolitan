@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    
+    <script>
+        // OOP
+        class kucing {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            makan () {
+                return `${this.name} Sedang Makan dan Berumur ${this.age} Tahun`
+            }
+        }
+
+        class mahasiswa {
+            constructor(nama, umur) {
+                this.nama = nama;
+                this.umur = umur;
+                // this.npm = npm;
+                // this.jurusan = jurusan;
+            }
+
+            biodata () {
+                return `Biodata Saya Adalah
+                Nama        : ${this.nama}
+                Umur        : ${this.umur}`
+            }
+        }
+    </script>
+
+</body>
+</html>
