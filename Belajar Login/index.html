@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Login</h1>
+            <input id="username" type="text" placeholder="Masukkan Username">
+            <input id="password" type="password" placeholder="Masukkan Password"> 
+            <button>Submit</button>
+            <p id="hasil"></p>
+        </form>
+    </div>
+
+    <script>
+        const username = document.getElementById("username")
+        const password = document.getElementById("password")
+        const hasil = document.getElementById("hasil")
+        const submit = document.querySelector("button")
+
+        submit.addEventListener("click", function(e){
+            e.preventDefault()
+            if (username.value == "admin" && password.value == "admin"){
+                hasil.innerHTML = "Login Berhasil"
+            } else {
+                hasil.innerHTML = "Login Gagal"
+            }
+        })
+    </script>
+</body>
+</html>
